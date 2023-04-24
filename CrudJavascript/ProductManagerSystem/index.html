@@ -14,15 +14,15 @@
             <p>Coded With <span class="love">&hearts;</span></p>
         </div>
         <div class="inputs">
-            <input placeholder="Title" type="text" id="title">
+            <input placeholder="title" type="text" id="title">
             <div class="price">
-                <input placeholder="Price" type="number" id="price">
-                <input placeholder="taxes" type="number" id="taxes">
-                <input placeholder="Ads" type="number" id="ads">
-                <input placeholder="Discount" type="number" id="discount">
-                <small id="total"> 12345 </small>
+                <input onkeyup="getTotal()" placeholder="Price" type="number" id="Price">
+                <input onkeyup="getTotal()" placeholder="taxes" type="number" id="taxes">
+                <input onkeyup="getTotal()" placeholder="Ads" type="number" id="Ads">
+                <input onkeyup="getTotal()" placeholder="Discount" type="number" id="Discount">
+                <small id="total">  </small>
             </div>
-            <input type="number" placeholder="Count" id="count">
+            <input type="number" placeholder="Count" id="Count">
             <input type="number" placeholder="Category" id="Category">
             <button id="submit">Creat</button>
         </div>
@@ -54,17 +54,8 @@
                 <th>update</th>
                 <th>delete</th>
             </tr>
-            <tbody>
-                <td>1</td>
-                <td>Samsung</td>
-                <td>2000</td>
-                <td>100</td>
-                <td>100</td>
-                <td>100</td>
-                <td>2100</td>
-                <td>phone</td>
-                <td><button id="update">Update</button></td>
-                <td><button id="delet">Delete</button></td>
+            <tbody id="tbody">
+
             </tbody>
         </table>
         
