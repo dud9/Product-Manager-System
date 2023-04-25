@@ -75,6 +75,7 @@ function ShowData(){
     let table = '';
     for(let i = 0; i < DataProduct.length;i++){
         table += `
+        <tbody>
         <td>${i}</td>
         <td>${DataProduct[i].title}</td>
         <td>${DataProduct[i].Price}</td>
@@ -85,6 +86,7 @@ function ShowData(){
         <td>${DataProduct[i].Category}</td>
         <td><button id="update">Update</button></td>
         <td><button onclick="DeleteData(${i})" id="delet">Delete</button></td>
+        </tbody>
         `
     }
     document.getElementById("tbody").innerHTML = table;
