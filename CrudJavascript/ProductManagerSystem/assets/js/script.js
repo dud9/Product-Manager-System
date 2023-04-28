@@ -7,8 +7,10 @@ let total = document.getElementById("total");
 let Count = document.getElementById("Count");
 let Category = document.getElementById("Category");
 let submit = document.getElementById("submit");
+// Make tow mood one for Creat & another for Update 
+let mood = "Create";
+let Tmp;
 
-// console.log(title,price,taxes,ads,Discount,total,count,Category,submit);
 // Get Total
 function getTotal(){
     if(Price.value != ""){
@@ -45,9 +47,30 @@ submit.onclick = function(){
         Count:Count.value,
         Category:Category.value,
     }
-    DataProduct.push(NewProduct);
+
+    // Count
+    if(mood === "Create"){
+       if (NewProduct.Count > 1){
+        for(let i =0; i < NewProduct.Count;i++){
+            DataProduct.push(NewProduct);
+        }
+    }else{
+        DataProduct.push(NewProduct);
+    } 
+    }else{
+        DataProduct[Tmp] = NewProduct;
+        mood = "Create";
+        submit.innerHTML = "Create";
+        Count.style.display = "block";
+    }
+
+    
+    
+
+    // Save Localstorage
     localStorage.setItem("product",JSON.stringify(DataProduct))
-    console.log(DataProduct)
+
+
     ClearData()
     ShowData()
 }
@@ -72,6 +95,7 @@ function ClearData(){
 // Read
 
 function ShowData(){
+    getTotal()
     let table = '';
     for(let i = 0; i < DataProduct.length;i++){
         table += `
@@ -84,12 +108,20 @@ function ShowData(){
         <td>${DataProduct[i].Discount}</td>
         <td>${DataProduct[i].total}</td>
         <td>${DataProduct[i].Category}</td>
-        <td><button id="update">Update</button></td>
+        <td><button onclick="UpdateData(${i})" id="update">Update</button></td>
         <td><button onclick="DeleteData(${i})" id="delet">Delete</button></td>
         </tbody>
         `
     }
     document.getElementById("tbody").innerHTML = table;
+    let BtnDeleteAll = document.getElementById("DeleteAll");
+    if(DataProduct.length > 0){
+        BtnDeleteAll.innerHTML = `
+        <button onclick="DeleteAll()">Delete All</button>
+        `
+    }else{
+        BtnDeleteAll.innerHTML =""; 
+    }
 } 
 ShowData()
 
@@ -101,13 +133,99 @@ function DeleteData(i){
     ShowData()
 }
 
+function DeleteAll(){
+    localStorage.clear()
+    DataProduct.splice(0)
+    ShowData()
+}
 
 
-// Count
+
 
 
 // Update
+function UpdateData(i){
+    title.value = DataProduct[i].title;
+    Price.value = DataProduct[i].Price;
+    taxes.value = DataProduct[i].taxes;
+    Ads.value = DataProduct[i].Ads;
+    Discount.value = DataProduct[i].Discount;
+    getTotal()
+    Count.style.display = "none";
+    Category.value = DataProduct[i].Category;
+    submit.innerHTML = "Update";
+    mood = "Update";
+    Tmp = i;
+    scroll({
+        top:0,
+        behavior:"smooth",
+    })
+}
+
+
 
 // Search
 
-// Clean Data
+let SearchMood = "title";
+
+function GetSearchMoood(id)
+{
+    let search = document.getElementById("search");
+    if(id == "SearchTitle"){
+        SearchMood = "title";
+        search.placeholder ="Search By Title";
+    }else{
+        SearchMood = "Category";
+        search.placeholder ="Search By Category";
+    }
+    search.focus()
+}
+
+function SearchData(value)
+{
+    let table = '';
+    if(SearchMood == "title")
+    {
+        for(let i =0; i < DataProduct.length;i++){
+            if(DataProduct[i].title.includes(value)){
+                table += `
+                        <tbody>
+                        <td>${i}</td>
+                        <td>${DataProduct[i].title}</td>
+                        <td>${DataProduct[i].Price}</td>
+                        <td>${DataProduct[i].taxes}</td>
+                        <td>${DataProduct[i].Ads}</td>
+                        <td>${DataProduct[i].Discount}</td>
+                        <td>${DataProduct[i].total}</td>
+                        <td>${DataProduct[i].Category}</td>
+                        <td><button onclick="UpdateData(${i})" id="update">Update</button></td>
+                        <td><button onclick="DeleteData(${i})" id="delet">Delete</button></td>
+                        </tbody>
+                        `
+            }
+        }
+    }else{
+        for(let i =0; i < DataProduct.length;i++){
+            if(DataProduct[i].Category.includes(value)){
+                table += `
+                        <tbody>
+                        <td>${i}</td>
+                        <td>${DataProduct[i].title}</td>
+                        <td>${DataProduct[i].Price}</td>
+                        <td>${DataProduct[i].taxes}</td>
+                        <td>${DataProduct[i].Ads}</td>
+                        <td>${DataProduct[i].Discount}</td>
+                        <td>${DataProduct[i].total}</td>
+                        <td>${DataProduct[i].Category}</td>
+                        <td><button onclick="UpdateData(${i})" id="update">Update</button></td>
+                        <td><button onclick="DeleteData(${i})" id="delet">Delete</button></td>
+                        </tbody>
+                        `}
+
+    }
+    
+}
+document.getElementById("tbody").innerHTML = table;
+}
+
+
