@@ -23,23 +23,25 @@
                 <small id="total">  </small>
             </div>
             <input type="number" placeholder="Count" id="Count">
-            <input type="number" placeholder="Category" id="Category">
+            <input placeholder="Category" id="Category">
             <button id="submit">Creat</button>
         </div>
 
 
         <div class="outputs">
             <div class="searchBlock">
-                <input type="text" id="search" placeholder="Search">
+                <input onkeyup="SearchData(this.value)" type="text" id="search" placeholder="Search">
                 <div class="btnSearch">
-                    <button id="SearchTitle">Search By Title</button>
-                    <button id="SearchCategory">Search By Category</button>
+                    <button onclick="GetSearchMoood(this.id)" id="SearchTitle">Search By Title</button>
+                    <button onclick="GetSearchMoood(this.id)" id="SearchCategory">Search By Category</button>
                 </div>
             </div>
         </div>
 
 
+        <div id="DeleteAll">
 
+        </div>
 
         <table>
             <tr>
