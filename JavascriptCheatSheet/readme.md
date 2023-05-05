@@ -1,12 +1,13 @@
 # javascript Cheat Sheet
 
 ## 1. Output
-### > Where write Javascript code 
+>### Where write Javascript code 
 > On page script
  ```html
   <script type="text/javascript">
     alert(a);
   </script>
+```
 
 ⦁	output
 
