@@ -1,6 +1,12 @@
 # javascript Cheat Sheet
 
-36 lectures . 3hr 48min
+## 1. Output
+### > Where write Javascript code 
+> On page script
+ ```html
+  <script type="text/javascript">
+    alert(a);
+  </script>
 
 ⦁	output
 
