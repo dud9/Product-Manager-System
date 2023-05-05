@@ -3,12 +3,16 @@
 ## 1. Output
 >### Where write Javascript code 
 > On page script
- ```html <script type="text/javascript">
-           alert(a);
-         </script> ```
+ ```html
+  <script type="text/javascript">
+   alert(a);
+  </script> 
+```
 
 > Include external Js File
-```html <script src="script.js"><script> ```
+```html
+<script src="script.js"><script>
+```
 
 ⦁	output
 
