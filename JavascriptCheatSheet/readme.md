@@ -1,21 +1,41 @@
 # javascript Cheat Sheet
 
-## 1. Output
+## 1. Basics
 >### Where write Javascript code 
-> On page script
+> ⦁ On page script
  ```html
   <script type="text/javascript">
    alert(a);
   </script> 
 ```
 
-> Include external Js File
+> ⦁ Include external Js File
 ```html
 <script src="script.js"><script>
 ```
 
-⦁	output
-
+## 2.	output
+>### The ways to display the output of a given code
+> ⦁ Write to browser Console
+```javascript
+console.log(" Hello world ");
+```
+> ⦁ Write to the HTML
+```javascript
+ document.write("hello");
+ ```
+ > ⦁ Output in an alert Box
+ ```javascript
+ alert("hi");
+ ```
+ > ⦁ yes/no dialog, returns true/false depending on user click
+ ```javascript
+ confirm("Hello");
+ ```
+ > ⦁ input dialog. Second argument is the initial value
+ ```javascript
+ prompt("your age?","0");
+ ```
 ⦁	comments
 ⦁	Html inside JS
 ⦁	variables
