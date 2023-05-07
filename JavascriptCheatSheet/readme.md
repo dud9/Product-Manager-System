@@ -36,7 +36,14 @@ console.log(" Hello world ");
  ```javascript
  prompt("your age?","0");
  ```
-⦁	comments
+## 2.	comments
+>### How to comment in Javascript
+```javascript
+//One line
+```
+```javascript
+/* multi line 
+comment */
 ⦁	Html inside JS
 ⦁	variables
 ⦁	mathematical operators
