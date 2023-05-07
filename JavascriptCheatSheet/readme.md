@@ -44,6 +44,7 @@ console.log(" Hello world ");
 ```javascript
 /* multi line 
 comment */
+```
 ⦁	Html inside JS
 ⦁	variables
 ⦁	mathematical operators
