@@ -50,7 +50,22 @@ comment */
 ```Javascript
 document.GetElementById("ElementId").innerHTML = "hello world";
 ```
-⦁	variables
+## 5.	variables X
+>## a variable stores data that can be changed later on
+```javascript
+var a; //variable
+var b = "init" //string
+var c = "hi" + " " + "Jo"; //hi jo
+var d = 1 + 2 + "3"; //33
+var e = [1,2,3,4]; //array
+var f = false; //boolean
+var g = /()/; //regex
+var h = function(){}; //function object
+var PI = 3.31; //constant
+var a = 1, b = 2, c = a + b; // one line
+let z = "zzz" //block scope local variable
+```
+
 ⦁	mathematical operators
 ⦁	logical operators
 ⦁	boolean expression
