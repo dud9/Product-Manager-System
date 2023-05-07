@@ -36,7 +36,7 @@ console.log(" Hello world ");
  ```javascript
  prompt("your age?","0");
  ```
-## 2.	comments
+## 3.	comments
 >### How to comment in Javascript
 ```javascript
 //One line
@@ -45,7 +45,11 @@ console.log(" Hello world ");
 /* multi line 
 comment */
 ```
-⦁	Html inside JS
+## 4.	Html inside JS
+>## Edit Dom element
+```Javascript
+document.GetElementById("ElementId").innerHTML = "hello world";
+```
 ⦁	variables
 ⦁	mathematical operators
 ⦁	logical operators
