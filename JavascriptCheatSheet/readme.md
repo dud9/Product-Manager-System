@@ -66,7 +66,49 @@ var a = 1, b = 2, c = a + b; // one line
 let z = "zzz" //block scope local variable
 ```
 
-⦁	mathematical operators
+## 6.	mathematical operators
+>## A typical arithmetic operation operates on two numbers.
+> ⦁ + Addition
+```javascript
+let x = 50 + 100;
+
+//variables
+
+let x = y + z;
+
+//expressions
+
+let x = (50 + 100) * a;
+```
+> ⦁ + Addition
+```javascript
+
+```
+> ⦁ + Addition
+```javascript
+
+```
+> ⦁ + Addition
+```javascript
+
+```
+> ⦁ + Addition
+```javascript
+
+```
+> ⦁ + Addition
+```javascript
+
+```
+> ⦁ + Addition
+```javascript
+
+```
+> ⦁ + Addition
+```javascript
+
+```
+
 ⦁	logical operators
 ⦁	boolean expression
 ⦁	IF ELSE statment
