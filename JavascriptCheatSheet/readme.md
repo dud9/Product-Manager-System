@@ -80,33 +80,52 @@ let x = y + z;
 
 let x = (50 + 100) * a;
 ```
-> ⦁ + Addition
+> ⦁ - Subtracting
 ```javascript
-
+let x = 5 - 2;
+//variable
+let x = y - z;
 ```
-> ⦁ + Addition
+> ⦁ * Multiplying
 ```javascript
-
+let x = 2 * 5;
+//variable
+let x = Y * Z;
 ```
-> ⦁ + Addition
+> ⦁ / Dividing
 ```javascript
+let x = 10 / 2;
 
+//variable
+let x = x / y;
 ```
-> ⦁ + Addition
+> ⦁ % Remainder
 ```javascript
-
+let x =2 % 10;
+//variable
+let x = y % z;
 ```
-> ⦁ + Addition
+> ⦁ ++ Incrementing (+1)
 ```javascript
-
+let x =5;
+x++;
+let z =x;
+document.GetElementById(Demo).InnerHTML=z;
+//print 6
 ```
-> ⦁ + Addition
+> ⦁ -- Decrementing
 ```javascript
-
+let x =5;
+x--;
+let z =x;
+document.GetElementById(Demo).InnerHTML=z;
+//print 4
 ```
-> ⦁ + Addition
+> ⦁ ** Exponentiation
 ```javascript
-
+let x = 5;
+document.getElementById("demo").innerHTML = x ** 2;
+//print 25
 ```
 
 ⦁	logical operators
