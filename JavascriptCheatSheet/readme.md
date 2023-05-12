@@ -489,7 +489,38 @@ onstorage, ontoggle, onwheel, ontouchcancel, ontouchend, ontouchmove, ontouchsta
 
 ```
 ## 22.	JS DOM
+>## With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+```javascript
+document.getElementById("elementID").innerHTML = "Hello World!";
+```
 ## 23.	get elements using tag name
+```javascript
+const spanBoxes = document.getElementsByTagName("span");
+```
 ## 24.	get elements using JS
+    Get HTML element by Id
+    Get HTML element by className
+    Get HTML element by Name
+    Get HTML element by tagName
+    Get HTML element by CSS Selector
+
 ## 25.	form example
+>## HTML form validation can be done by JavaScript.
+>If a form field (fname) is empty, this function alerts a message, and returns false, to prevent the form from being submitted:
+```javascript
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+} 
+```
+```html
+ <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form> 
+```
 ## 26.	timers
+
