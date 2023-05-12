@@ -139,23 +139,21 @@ document.getElementById("demo").innerHTML = x ** 2;
 
 
 ## 8.	boolean expression (False,True)
-⦁	IF ELSE statment
-⦁	switch case
-⦁	while loop
-⦁	DO WHILE loop
-⦁	FOR loop
-⦁	contenue and break statements
-⦁	Function
-⦁	variable scope
-⦁	mathematical functions
-⦁	string functions
-⦁	date
-⦁	arrays
-⦁	JS events
-⦁	JS DOM
-⦁	example (show more button)
-⦁	get elements using tag name
-⦁	get elements using JS
-⦁	form example
-⦁	timers
-⦁	3 example
+## 9.	IF ELSE statment
+## 10. switch case
+## 11.	while loop
+## 12.	DO WHILE loop
+## 13.	FOR loop
+## 14.	contenue and break statements
+## 15.	Function
+## 16.	variable scope
+## 17.	mathematical functions
+## 18.	string functions
+## 19.	date
+## 20.	arrays
+## 21.	JS events
+## 22.	JS DOM
+## 23.	get elements using tag name
+## 24.	get elements using JS
+## 25.	form example
+## 26.	timers
