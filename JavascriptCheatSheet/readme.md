@@ -136,6 +136,19 @@ document.getElementById("demo").innerHTML = x ** 2;
 
 ## 7. logical operators (Arithmetic)
 >## Logical operators are used to determine the logic between variables or values.
+```javascript
+let x = 6;
+let y = 3;
+//&& and
+(x < 10 && y > 1) //is true
+
+//|| OR
+(x == 5 || y == 5) //is false
+
+//! NOT
+!(x == Y) // is true
+
+```
 
 
 ## 8.	boolean expression (False,True)
