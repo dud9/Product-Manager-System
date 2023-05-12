@@ -244,6 +244,22 @@ html += "<li>" + i + "</li>";
 }
 ```
 ## 14.	contenue and break statements
+>## The **break** statement "jumps out" of a loop.
+>## The **continue** statement "jumps over" one iteration in the loop.
+```javascript
+//Break
+
+for (var i = 0; i < 10; i++) {
+if (i == 5) { break; }          // stops and exits the cycle
+document.write(i + ", ");       // last output number is 4
+}
+//Continue
+
+for (var i = 0; i < 10; i++) {
+if (i == 5) { continue; }       // skips the rest of the cycle
+document.write(i + ", ");       // skips 5
+}
+```
 ## 15.	Function
 ## 16.	variable scope
 ## 17.	mathematical functions
