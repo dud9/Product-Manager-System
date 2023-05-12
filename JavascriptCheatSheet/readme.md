@@ -209,7 +209,23 @@ default:                        // else...
 } 
 ```
 ## 11.	while loop
+> ## Loops can execute a block of code a number of times.
+```javascript
+var i = 1;                      // initialize
+while (i < 100) {               // enters the cycle if statement is true
+i *= 2;                     // increment to avoid infinite loop
+document.write(i + ", ");   // output
+}
+```
 ## 12.	DO WHILE loop
+> ## The do while statement creates a loop that executes a specified statement until the test condition evaluates to false
+```javascript
+var i = 1;                      // initialize
+do {                            // enters cycle at least once
+i *= 2;                     // increment to avoid infinite loop
+document.write(i + ", ");   // output
+} while (i < 100)               // repeats cycle if statement is true at the end
+```
 ## 13.	FOR loop
 ## 14.	contenue and break statements
 ## 15.	Function
