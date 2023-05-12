@@ -153,14 +153,14 @@ let y = 3;
 >## Comparing data of different types may give unexpected results.
 >An empty string converts to 0. A non-numeric string converts to NaN which is always false.
 ```javascript
-2 < 12 	//true 	
-2 < "12" 	//true 	
+2 < 12 	    //true 	
+2 < "12" 	  //true 	
 2 < "John" 	//false 	
 2 > "John" 	//false 	
-2 == "John" 	//false 	
+2 == "John" //false 	
 "2" < "12" 	//false 	
 "2" > "12" 	//true 	
-"2" == "12" 	//false
+"2" == "12" //false
 ```
 ## 9.	IF ELSE statment
 ## 10. switch case
