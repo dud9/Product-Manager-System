@@ -64,6 +64,12 @@ var h = function(){}; //function object
 var PI = 3.31; //constant
 var a = 1, b = 2, c = a + b; // one line
 let z = "zzz" //block scope local variable
+
+//Values 
+false,true //boolean
+10, 4.50, 0b100011, 0xF6, NaN //number
+"Flower" , 'marwan' //string
+undefined, null, infinity //special
 ```
 
 ## 6.	mathematical operators
@@ -128,8 +134,11 @@ document.getElementById("demo").innerHTML = x ** 2;
 //print 25
 ```
 
-⦁	logical operators
-⦁	boolean expression
+## 7. logical operators (Arithmetic)
+>## 
+
+
+## 8.	boolean expression (False,True)
 ⦁	IF ELSE statment
 ⦁	switch case
 ⦁	while loop
