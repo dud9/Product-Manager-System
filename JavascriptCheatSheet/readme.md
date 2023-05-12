@@ -209,7 +209,7 @@ default:                        // else...
 } 
 ```
 ## 11.	while loop
-> ## Loops can execute a block of code a number of times.
+> ##  loops through a block of code while a specified condition is true
 ```javascript
 var i = 1;                      // initialize
 while (i < 100) {               // enters the cycle if statement is true
@@ -227,6 +227,22 @@ document.write(i + ", ");   // output
 } while (i < 100)               // repeats cycle if statement is true at the end
 ```
 ## 13.	FOR loop
+> ## loops through a block of code a number of times
+```javascript
+for (var i = 0; i < 10; i++) {
+document.write(i + ": " + i*3 + "<br />");
+}
+
+var sum = 0;
+for (var i = 0; i < a.length; i++) {
+sum + = a[i];
+}               // parsing an array
+
+html = "";
+for (var i of custOrder) {
+html += "<li>" + i + "</li>";
+}
+```
 ## 14.	contenue and break statements
 ## 15.	Function
 ## 16.	variable scope
