@@ -184,8 +184,30 @@ a || b              // logical or
 
 ```
 ## 9.	IF ELSE statment
-
+> ⦁ Use if to specify a block of code to be executed, if a specified condition is true
+> ⦁ Use else to specify a block of code to be executed, if the same condition is false
+> ⦁ Use else if to specify a new condition to test, if the first condition is false
+```javascript
+if ((age >= 14) && (age < 19)) {        // logical condition
+status = "Eligible.";               // executed if condition is true
+} else {                                // else block is optional
+status = "Not eligible.";           // executed if condition is false
+}
+```
 ## 10. switch case
+> ⦁ Use switch to specify many alternative blocks of code to be executed
+```javascript
+switch (new Date().getDay()) {      // input is current day
+case 6:                         // if (day == 6)
+	text = "Saturday";          
+	break;
+case 0:                         // if (day == 0)
+	text = "Sunday";
+	break;
+default:                        // else...
+	text = "Whatever";
+} 
+```
 ## 11.	while loop
 ## 12.	DO WHILE loop
 ## 13.	FOR loop
