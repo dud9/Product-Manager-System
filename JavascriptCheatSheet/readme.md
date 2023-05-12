@@ -444,7 +444,50 @@ highest = x[0];                         // first item in sorted array is the low
 x.sort(function(a, b){return 0.5 - Math.random()});     // random order sort
 ```
 ## 21.	JS events
+>##HTML events are "things" that happen to HTML elements.
+>##When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+```javascript
+//example
+<button onclick="myFunction();">
+Click here
+</button>
 
+/*Mouse
+onclick, oncontextmenu, ondblclick, onmousedown,
+onmouseenter, onmouseleave, onmousemove,
+onmouseover, onmouseout, onmouseup */
+
+/*Keyboard
+onkeydown, onkeypress, onkeyup */
+
+/*Frame
+onabort, onbeforeunload, onerror, onhashchange, onload,
+onpageshow, onpagehide, onresize, onscroll, onunload */
+
+/*Form
+onblur, onchange, onfocus, onfocusin, onfocusout, oninput,
+oninvalid, onreset, onsearch, onselect, onsubmit */
+
+/*Drag
+ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop */
+
+/*Clipboard
+oncopy, oncut, onpaste */
+
+/*Media
+onabort, oncanplay, oncanplaythrough, ondurationchange, onended, onerror,
+onloadeddata, onloadedmetadata, onloadstart, onpause, onplay, onplaying,
+onprogress, onratechange, onseeked, onseeking, onstalled, onsuspend,
+ontimeupdate, onvolumechange, onwaiting */
+
+/*Animation
+animationend, animationiteration, animationstart */
+
+/*Miscellaneous
+transitionend, onmessage, onmousewheel, ononline, onoffline, onpopstate, onshow,
+onstorage, ontoggle, onwheel, ontouchcancel, ontouchend, ontouchmove, ontouchstart */
+
+```
 ## 22.	JS DOM
 ## 23.	get elements using tag name
 ## 24.	get elements using JS
