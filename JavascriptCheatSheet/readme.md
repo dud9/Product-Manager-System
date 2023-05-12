@@ -332,8 +332,85 @@ function myFunction() {
 ```
 
 ## 17.	mathematical functions
+>## JavaScript Math object allows you to perform mathematical tasks on numbers.
+```javascript
+var pi = 3.141;
+pi.toFixed(0);          // returns 3
+pi.toFixed(2);          // returns 3.14 - for working with money
+pi.toPrecision(2)       // returns 3.1
+pi.valueOf();           // returns number
+Number(true);           // converts to number
+Number(new Date())      // number of milliseconds since 1970
+parseInt("3 months");   // returns the first number: 3
+parseFloat("3.5 days"); // returns 3.5
+Number.MAX_VALUE        // largest possible JS number
+Number.MIN_VALUE        // smallest possible JS number
+Number.NEGATIVE_INFINITY// -Infinity
+Number.POSITIVE_INFINITY// Infinity
+//=======================================================================
+var pi = Math.PI;       // 3.141592653589793
+Math.round(4.4);        // = 4 - rounded
+Math.round(4.5);        // = 5
+Math.pow(2,8);          // = 256 - 2 to the power of 8
+Math.sqrt(49);          // = 7 - square root 
+Math.abs(-3.14);        // = 3.14 - absolute, positive value
+Math.ceil(3.14);        // = 4 - rounded up
+Math.floor(3.99);       // = 3 - rounded down
+Math.sin(0);            // = 0 - sine
+Math.cos(Math.PI);      // OTHERS: tan,atan,asin,acos,
+Math.min(0, 3, -2, 2);  // = -2 - the lowest value
+Math.max(0, 3, -2, 2);  // = 3 - the highest value
+Math.log(1);            // = 0 natural logarithm 
+Math.exp(1);            // = 2.7182pow(E,x)
+Math.random();          // random number between 0 and 1
+Math.floor(Math.random() * 5) + 1;  // random integer, from 1 to 5
+```
 ## 18.	string functions
+> ##String search methods are covered in the next chapter.
+```javascript
+var abc = "abcdefghijklmnopqrstuvwxyz";
+var esc = 'I don\'t \n know';   // \n new line
+var len = abc.length;           // string length
+abc.indexOf("lmno");            // find substring, -1 if doesn't contain 
+abc.lastIndexOf("lmno");        // last occurance
+abc.slice(3, 6);                // cuts out "def", negative values count from behind
+abc.replace("abc","123");       // find and replace, takes regular expressions
+abc.toUpperCase();              // convert to upper case
+abc.toLowerCase();              // convert to lower case
+abc.concat(" ", str2);          // abc + " " + str2
+abc.charAt(2);                  // character at index: "c"
+abc[2];                         // unsafe, abc[2] = "C" doesn't work
+abc.charCodeAt(2);              // character code at index: "c" -> 99
+abc.split(",");                 // splitting a string on commas gives an array
+abc.split("");                  // splitting on characters
+128.toString(16);               // number to hex(16), octal (8) or binary (2)
+```
 ## 19.	date
+>## JavaScript Date Objects let us work with dates:
+```javascript
+var age = 18;                           // number 
+var name = "Jane";                      // string
+var name = {first:"Jane", last:"Doe"};  // object
+var truth = false;                      // boolean
+var sheets = ["HTML","CSS","JS"];       // array
+var a; typeof a;                        // undefined
+var a = null;                           // value null
+//Objects
+var student = {                 // object name
+firstName:"Jane",           // list of properties and values
+lastName:"Doe",
+age:18,
+height:170,
+fullName : function() {     // object function
+   return this.firstName + " " + this.lastName;
+}
+}; 
+//====================================================================
+//example
+student.age = 19;           // setting value
+student[age]++;             // incrementing
+name = student.fullName();  // call object function
+```
 ## 20.	arrays
 ## 21.	JS events
 ## 22.	JS DOM
