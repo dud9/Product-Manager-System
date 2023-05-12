@@ -135,7 +135,7 @@ document.getElementById("demo").innerHTML = x ** 2;
 ```
 
 ## 7. logical operators (Arithmetic)
->## 
+>## Logical operators are used to determine the logic between variables or values.
 
 
 ## 8.	boolean expression (False,True)
