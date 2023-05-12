@@ -261,7 +261,76 @@ document.write(i + ", ");       // skips 5
 }
 ```
 ## 15.	Function
+>##  JavaScript function is executed when "something" invokes it (calls it).
+```javascript
+function addNumbers(a, b) {
+return a + b; ;
+}
+
+x = addNumbers(1, 2);
+```
 ## 16.	variable scope
+>## Scope determines the accessibility (visibility) of variables.
+>## Block scope
+```javascript
+/*ES6 introduced two important new JavaScript keywords: let and const.
+These two keywords provide Block Scope in JavaScript.
+Variables declared inside a { } block cannot be accessed from outside the block: */
+{
+  let x = 2;
+}
+// x can NOT be used here 
+{
+  var x = 2;
+}
+// x CAN be used here 
+```
+>## Function scope
+```javascript
+/* JavaScript has function scope: Each function creates a new scope.
+Variables defined inside a function are not accessible (visible) from outside the function.
+Variables declared with var, let and const are quite similar when declared inside a function.
+They all have Function Scope: */
+
+function myFunction() {
+  var carName = "Volvo";   // Function Scope
+}
+
+function myFunction() {
+  let carName = "Volvo";   // Function Scope
+}
+
+function myFunction() {
+  const carName = "Volvo";   // Function Scope
+}
+```
+>## Global scope
+```javascript
+// A variable declared outside a function, becomes GLOBAL.
+let carName = "Volvo";
+// code here can use carName
+
+function myFunction() {
+// code here can also use carName
+}
+
+//==============================
+
+var x = 2;       // Global scope
+let x = 2;       // Global scope
+const x = 2;       // Global scope
+//==============================
+
+//Automatically Global
+myFunction();
+
+// code here can use carName
+
+function myFunction() {
+  carName = "Volvo";
+} 
+```
+
 ## 17.	mathematical functions
 ## 18.	string functions
 ## 19.	date
