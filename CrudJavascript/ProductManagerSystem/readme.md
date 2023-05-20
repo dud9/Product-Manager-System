@@ -28,3 +28,4 @@ These are the five basic operations for handling data in a program :
 - [x] Able to calculate product tax and advertising expenses and find the final price
 - [x] Data will not be added unless it is correct
 
+![alt text](https://github.com/MRWNIO/WebAppProjects/blob/main/CrudJavascript/ProductManagerSystem/SS.png?raw=true)
